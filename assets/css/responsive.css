@@ -1,0 +1,185 @@
+/* =========================
+   Desktop
+   ========================= */
+
+@media (min-width: 900px) {
+
+    /* =========================
+    Header Styles
+   ========================= */
+
+    /* Header */
+    .header {
+        height: 96px;
+    }
+
+    /* Header Container */
+    .header__container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: 150px auto;
+        align-items: center;
+    }
+
+    /* Navbar */
+    .header__navbar {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        height: auto;
+        transform: none;
+        padding: 0;
+        z-index: auto;
+        transition: none;
+        background-color: transparent;
+        box-shadow: none;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 0.8rem;
+    }
+
+    /* Menu */
+    .header__menu {
+        flex-direction: row;
+    }
+
+    /* Menu Item */
+    .header__item {
+        padding: 10px;
+        background-color: transparent;
+        color: var(--text-header);
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    /* Menu Item Active */
+    .header__item:active {
+        background-color: transparent;
+    }
+
+    /* Header Link */
+    .header__link {
+        transition: color 0.3s ease;
+    }
+
+    /* Header Link Hover */
+    .header__link:hover {
+        color: var(--brand-primary);
+    }
+
+    /* Header Buttons */
+    .header__buttons {
+        margin-top: 0;
+        gap: 1rem;
+    }
+
+    /* Mobile Menu Icon */
+    .header__menu-icon {
+        display: none;
+    }
+
+    /* =========================
+    Main Styles
+   ========================= */
+   /* Hero */
+   @media (min-width: 900px) {
+
+    /* Hero */
+    .hero{
+        max-width: 1320px;
+        margin: 0 auto;
+        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
+    /* Hero Content */
+    .hero__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Hero Title */
+    .hero__title{font-size: 3.8rem;}
+
+    /* Hero Description */
+    .hero__description{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: auto;
+    }
+
+    }
+
+    .about{
+        max-width: 1320px;
+        margin: 2rem auto;
+        padding: 5rem;
+        grid-template-columns: repeat(2 , 1fr);
+        gap: 3rem;
+        box-shadow: var(--shadow-img);
+        position: relative;
+        align-items: center;
+    }
+
+    /* About Image */
+    .about__image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* About Image User */
+    .about__image-user{
+        width: 424px;
+        height: 504px;
+        height: auto;
+        padding-left: 0;
+        object-fit: initial;
+    }
+
+    /* About Socials */
+    .about__socials{
+        position: absolute;
+        background-color: var(--background-primary);
+        top: 83%;
+        padding: 15px 0;
+        border-radius:4px ;
+        box-shadow: 1px 5px 9px 2px rgba(43, 56, 76, 0.139);
+        gap: 1rem;
+        width: 200px;
+    }
+
+    /* About Social Svg */
+    .about__social svg{
+        width: 18px;
+        height: 18px;
+    }
+
+    .about__content{
+        gap: 2rem;
+    }
+
+    /* About Title */
+    .about__title{
+        font-size: 2.37em;
+        line-height: 50px;
+    }
+
+    /* About Description */
+    .about__description{
+        font-size: 1.1rem;
+    }
+
+    .about__description-last{display: block;}
+
+    /* About Button */
+    .about__button{
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
+}

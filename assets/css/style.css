@@ -1,0 +1,28 @@
+/* Add Icons */
+@import url('../../node_modules/remixicon/fonts/remixicon.css');
+
+.skeleton {
+    background: linear-gradient(90deg, #dce0e5, #f0f2f4, #dce0e5);
+    background-size: 200%;
+    animation: loader 1s infinite reverse;
+    color: transparent;
+}
+
+.skeleton .skeleton-content {
+    visibility: hidden;
+}
+
+.skeleton img {
+    opacity: 0;
+}
+
+
+@keyframes loader {
+    from {
+        background-position: -100% 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}

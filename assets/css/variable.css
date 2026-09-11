@@ -1,0 +1,68 @@
+/* =========================
+   Design Variables
+   ========================= */
+
+:root {
+
+    /* =========================
+       Brand
+       ========================= */
+
+    --brand-primary: #A53DFF;
+    --brand-light: #EDD8FF;
+    --brand-dark: #210C33;
+
+
+    /* =========================
+       Text
+       ========================= */
+
+    --text-primary: #132238;
+    --text-secondary: #556070;
+    --text-tertiary: #697484;
+    --text-muted: #A5ACB5;
+    --text-light: #C3C7CE;
+    --text-inverse: #FFFFFF;
+    --text-header: #333333;
+
+
+    /* =========================
+       Background
+       ========================= */
+
+    --background-primary: #FFFFFF;
+    --background-light: #F0F1F3;
+    --background-dark: #132238;
+    --background-footer: #2B384C;
+
+
+    /* =========================
+       Neutral
+       ========================= */
+
+    --neutral-700: #424E60;
+
+
+    /* =========================
+    Accent
+    ========================= */
+    
+    --accent-blue-light: #DBEAFE;
+    --accent-purple: #7C3AED;
+
+
+    /* =========================
+       Action
+       ========================= */
+
+    --action-primary: #A53DFF;
+
+
+    /* =========================
+       Shadow
+       ========================= */
+
+    --shadow-card: 32px 32px 124px 0 rgba(43, 56, 76, 0.10);
+    --shadow-default: 0 12px 64px 0 rgba(28, 25, 25, 0.12);
+    --shadow-img: 0px 24px 116px 0px rgba(43, 56, 76, 0.139);
+}

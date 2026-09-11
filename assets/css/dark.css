@@ -1,0 +1,118 @@
+/* =========================
+   Dark Theme Variables
+   ========================= */
+
+body.dark {
+
+    /* =========================
+       Background
+       ========================= */
+
+    --background-primary: #101418;
+    --background-light: #171C22;
+    --background-dark: #0A0D10;
+    --background-footer: #080A0D;
+
+
+    /* =========================
+       Text
+       ========================= */
+
+    --text-primary: #F5F7FA;
+    --text-secondary: #C2C8D0;
+    --text-tertiary: #929AA5;
+    --text-muted: #68717D;
+    --text-light: #444C56;
+
+
+    /* =========================
+       Brand
+       ========================= */
+
+    --brand-light: #252B33;
+
+
+    /* =========================
+       Shadow
+       ========================= */
+
+    --shadow-card: 0 20px 60px 0 rgba(0, 0, 0, 0.35);
+    --shadow-default: 0 12px 50px 0 rgba(0, 0, 0, 0.40);
+}
+
+
+/* =========================
+   Dark Body
+   ========================= */
+
+body.dark {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+}
+
+/* =========================
+   Dark Header
+   ========================= */
+
+body.dark .header__logo-img{
+    color: var(--text-primary)
+}
+
+body.dark .header__navbar {
+    background-color: #171C22;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+body.dark .header__item {
+    background-color: #101418;
+    border: 1px solid rgba(232, 210, 255, 0.14);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.30);
+}
+
+body.dark .header__item:active {
+    background-color: var(--brand-primary);
+}
+
+body.dark .header__link {
+    color: var(--text-primary);
+}
+
+body.dark .header__contact {
+    background-color: var(--action-primary);
+    color: var(--text-inverse);
+    box-shadow: 0 6px 24px rgba(165, 61, 255, 0.28);
+}
+
+body.dark .header__toggle-theme {
+    background-color: #242A32;
+    color: var(--text-primary);
+}
+
+body.dark .about__image-user{background-color: transparent;}
+
+
+/* =========================
+   Desktop
+   ========================= */
+
+@media (min-width: 900px) {
+
+    body.dark .header__navbar {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    body.dark .header__item {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    body.dark .header__item:active {
+        background-color: transparent;
+    }
+
+    body.dark .header__link:hover {
+        color: var(--brand-primary);
+    }
+}

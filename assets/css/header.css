@@ -1,0 +1,112 @@
+/* Header */
+.header{border-bottom: 1px solid var(--brand-light);}
+
+/* Header Container */
+.header__container{
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr) ;
+    align-items: center;
+    position: relative;
+}
+
+/* Size Logo */
+.header__logo-img{
+    width: 150px;
+    color: var(--text-header);
+}
+
+/* Navbar */
+.header__navbar{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    height: 100%;
+    transform: translateX(-800px);
+    padding: 40px 10%;
+    z-index: 999;
+    transition: all 0.5s ease;
+    background-color: var(--background-primary);
+    box-shadow: 0 8px 24px #2B384C;
+}
+
+.show_menu{ transform:translateX(0);}
+
+/* Menu Styles */
+.header__menu{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+/* Item Menu Styles */
+.header__item{
+    padding: 15px 60px;
+    width: 100%;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    text-align: center;
+    border: 1px solid var(--brand-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(43, 56, 76, 0.08);
+    cursor: pointer;
+}
+
+.header__item:active{
+    background-color: var(--brand-light);
+}
+
+/* Header Link */
+.header__link{
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.header__buttons{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Contact Us */
+.header__contact{
+    padding: 15px 18px;
+    background-color: var(--action-primary);
+    color: var(--text-inverse);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid var(--brand-light);
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(165, 61, 255, 0.30);
+}
+
+
+.header__contact:active{opacity: 0.9;}
+
+/* Change Theme */
+.header__toggle-theme{
+    font-size: 1.4rem;
+    background-color: var(--brand-light);
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.header__toggle-theme:active{
+    transform: translateY(-5px);
+}
+
+/* Icon Menu */
+.header__menu-icon{
+    justify-self: flex-end;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
